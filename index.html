@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>image deleter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="section">
+        <ul id="image">
+            <li class="MyId"><img src="https://media.istockphoto.com/id/1394440950/photo/natural-view-cosmos-filed-and-sunset-on-garden-background.jpg?s=1024x1024&w=is&k=20&c=qE67R9rjYs0ynmV1SFDMP7XDsGAt-ZGoRrKYMj1tO-k=" alt="no img found"></li>
+            <li class="MyId"><img src="https://media.istockphoto.com/id/1394440950/photo/natural-view-cosmos-filed-and-sunset-on-garden-background.jpg?s=1024x1024&w=is&k=20&c=qE67R9rjYs0ynmV1SFDMP7XDsGAt-ZGoRrKYMj1tO-k=" alt="no img found"></li>
+            <li class="MyId"><img src="https://media.istockphoto.com/id/1394440950/photo/natural-view-cosmos-filed-and-sunset-on-garden-background.jpg?s=1024x1024&w=is&k=20&c=qE67R9rjYs0ynmV1SFDMP7XDsGAt-ZGoRrKYMj1tO-k=" alt="no img found"></li>
+            <li class="MyId"><img src="https://media.istockphoto.com/id/1394440950/photo/natural-view-cosmos-filed-and-sunset-on-garden-background.jpg?s=1024x1024&w=is&k=20&c=qE67R9rjYs0ynmV1SFDMP7XDsGAt-ZGoRrKYMj1tO-k=" alt="no img found"></li>
+            <li class="MyId"><img src="https://media.istockphoto.com/id/1394440950/photo/natural-view-cosmos-filed-and-sunset-on-garden-background.jpg?s=1024x1024&w=is&k=20&c=qE67R9rjYs0ynmV1SFDMP7XDsGAt-ZGoRrKYMj1tO-k=" alt="no img found"></li>
+            <li class="MyId"><img src="https://media.istockphoto.com/id/1394440950/photo/natural-view-cosmos-filed-and-sunset-on-garden-background.jpg?s=1024x1024&w=is&k=20&c=qE67R9rjYs0ynmV1SFDMP7XDsGAt-ZGoRrKYMj1tO-k=" alt="no img found"></li>
+        </ul>
+    </div>
+
+
+    <script>
+        const img = document.querySelector('#image');
+        const li = document.querySelector('.MyId');
+
+        img.addEventListener('click' , (e) => {
+            const removeIt = e.target.parentNode;
+            removeIt.parentNode.removeChild(removeIt)
+        } )
+        
+    </script>
+</body>
+</html>
